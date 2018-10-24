@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Ali\'s Waste of Bandwidth',
+    title: "Ali's Waste of Bandwidth",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -21,7 +21,8 @@ module.exports = {
       options: {
         postCssPlugins: [
           require('postcss-import')(),
-          require(`postcss-preset-env`)()
+          require('tailwindcss')(),
+          require(`postcss-preset-env`)(),
         ],
       },
     },
