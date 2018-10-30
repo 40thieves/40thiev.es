@@ -39,7 +39,7 @@ const Logo = () => (
       <span className="text-right font-light uppercase italic">Smith</span>
     </span>
     <span className="border-l border-grey-darkest mx-3" aria-hidden="true" />
-    <span className="flex flex-col text-grey-darkest no-underline">
+    <span className="flex flex-col no-underline">
       40
       <span className="text-right font-light uppercase italic">Thieves</span>
     </span>
