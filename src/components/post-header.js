@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
-const PostHeader = ({ title, date, readTime }) => (
+const PostHeader = ({ slug, title, date, readTime }) => (
   <header className="flex">
-    <h1 className="mb-4" style={{ order: 1 }}>
-      {title}
+    <h1 className="mb-4 leading-none" style={{ order: 1 }}>
+      <Link to={slug} className="text-blue no-underline font-medium">
+        {title}
+      </Link>
     </h1>
     <div
       className="

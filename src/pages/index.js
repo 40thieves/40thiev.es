@@ -14,6 +14,9 @@ const query = graphql`
             title
             date
           }
+          fields {
+            slug
+          }
           timeToRead
           excerpt
         }
@@ -31,6 +34,7 @@ const IndexPage = () => (
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <article key={node.id} className="max-w-md mx-auto mt-16">
               <PostHeader
+                slug={node.fields.slug}
                 title={node.frontmatter.title}
                 date={node.frontmatter.date}
                 readTime={node.timeToRead}
