@@ -30,7 +30,7 @@ const IndexPage = () => (
     <StaticQuery
       query={query}
       render={data => (
-        <main>
+        <>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <article key={node.id} className="max-w-md mx-auto mt-16">
               <PostHeader
@@ -44,7 +44,7 @@ const IndexPage = () => (
               </section>
             </article>
           ))}
-        </main>
+        </>
       )}
     />
   </Layout>

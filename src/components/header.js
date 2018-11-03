@@ -4,7 +4,7 @@ const Header = () => (
   <header>
     <ColorBar />
 
-    <div className="container mx-auto px-10 max-w-sl">
+    <div className="container mx-16">
       <h1 className="mt-12 mb-5 text-4xl">
         <a
           href="/"

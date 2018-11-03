@@ -24,20 +24,18 @@ const Post = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <main>
-        <article className="max-w-md mx-auto mt-16">
-          <PostHeader
-            slug={post.fields.slug}
-            title={post.frontmatter.title}
-            date={post.frontmatter.date}
-            readTime={post.timeToRead}
-          />
-          <section
-            className="ml-20 post-content"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-        </article>
-      </main>
+      <article className="max-w-md mx-auto mt-16">
+        <PostHeader
+          slug={post.fields.slug}
+          title={post.frontmatter.title}
+          date={post.frontmatter.date}
+          readTime={post.timeToRead}
+        />
+        <section
+          className="ml-20 post-content"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </article>
     </Layout>
   )
 }
