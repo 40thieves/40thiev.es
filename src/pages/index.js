@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import PostHeader from '../components/post-header'
 
 const query = graphql`
   query IndexPageQuery {
@@ -26,16 +27,20 @@ const IndexPage = () => (
     <StaticQuery
       query={query}
       render={data => (
-        <>
+        <main>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div key={node.id}>
-              <h3>{node.frontmatter.title}</h3>
-              <span>{node.frontmatter.date}</span>
-              <span>{node.timeToRead}</span>
-              <p>{node.excerpt}</p>
-            </div>
+            <article key={node.id} className="max-w-md mx-auto mt-16">
+              <PostHeader
+                title={node.frontmatter.title}
+                date={node.frontmatter.date}
+                readTime={node.timeToRead}
+              />
+              <section className="ml-20">
+                <p>{node.excerpt}</p>
+              </section>
+            </article>
           ))}
-        </>
+        </main>
       )}
     />
   </Layout>
