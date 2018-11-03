@@ -39,7 +39,7 @@ const IndexPage = () => (
                 date={node.frontmatter.date}
                 readTime={node.timeToRead}
               />
-              <section className="ml-20">
+              <section className="ml-20 mt-4">
                 <p>{node.excerpt}</p>
               </section>
             </article>
