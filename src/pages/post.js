@@ -14,6 +14,7 @@ export const query = graphql`
       fields {
         slug
       }
+      timeToRead
       html
     }
   }
@@ -29,6 +30,7 @@ const Post = ({ data }) => {
             slug={post.fields.slug}
             title={post.frontmatter.title}
             date={post.frontmatter.date}
+            readTime={post.timeToRead}
           />
           <section
             className="ml-20"
