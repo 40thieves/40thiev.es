@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const PostHeader = ({ slug, title, date, readTime }) => (
   <header className="flex">
-    <h1 className="font-serif leading-none" style={{ order: 1 }}>
+    <h1 className="font-serif text-4xl leading-none" style={{ order: 1 }}>
       <Link to={slug} className="text-blue no-underline font-medium">
         {title}
       </Link>
