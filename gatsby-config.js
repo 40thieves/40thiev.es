@@ -21,7 +21,7 @@ module.exports = {
       options: {
         postCssPlugins: [
           require('postcss-import')(),
-          require('tailwindcss')(),
+          require('tailwindcss')('./tailwind.config.js'),
           require(`postcss-preset-env`)(),
         ],
       },
@@ -30,8 +30,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'src',
-        path: `${__dirname}/src/`
-      }
+        path: `${__dirname}/src/`,
+      },
     },
     'gatsby-transformer-remark',
   ],

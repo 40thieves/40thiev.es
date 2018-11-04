@@ -32,7 +32,7 @@ const Post = ({ data }) => {
           readTime={post.timeToRead}
         />
         <section
-          className="ml-20 post-content"
+          className="ml-20 text-lg leading-tight post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </article>
