@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 const PostHeader = ({ slug, title, date, readTime }) => (
-  <header className="flex">
+  <header className="flex flex-col-reverse sm:flex-row">
     <h1 className="font-serif text-4xl leading-none" style={{ order: 1 }}>
       <Link to={slug} className="text-blue no-underline font-medium">
         {title}
@@ -10,20 +10,21 @@ const PostHeader = ({ slug, title, date, readTime }) => (
     </h1>
     <div
       className="
-        w-16 pt-2 mr-4
+        flex sm:flex-col
+        sm:w-16 sm:mx-4 sm:h-0
+        pt-2
         border-t border-teal-dark
         text-grey-dark text-xs text-center leading-tight
       "
-      style={{ height: 0 }}
     >
-      <time dateTime={date}>
+      <time dateTime={date} className="mx-1 sm:ml-0">
         {new Date(date).toLocaleDateString('en-GB', {
           day: 'numeric',
           month: 'short',
           year: 'numeric',
         })}
       </time>
-      <p className="pt-2">{readTime} min read</p>
+      <p className="mx-1 sm:ml-0 sm:pt-2">{readTime} min read</p>
     </div>
   </header>
 )

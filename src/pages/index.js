@@ -32,14 +32,14 @@ const IndexPage = () => (
       render={data => (
         <>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <article key={node.id} className="max-w-md mx-auto mt-16">
+            <article key={node.id} className="max-w-md mx-8 sm:mx-auto mt-16">
               <PostHeader
                 slug={node.fields.slug}
                 title={node.frontmatter.title}
                 date={node.frontmatter.date}
                 readTime={node.timeToRead}
               />
-              <section className="ml-20 mt-4">
+              <section className="sm:ml-24 mt-4">
                 <p>{node.excerpt}</p>
               </section>
             </article>

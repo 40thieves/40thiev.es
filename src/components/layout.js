@@ -28,7 +28,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <div className="relative min-h-screen">
           <Header title={data.site.siteMetadata.title} />
-          <main className="pb-32">{children}</main>
+          <main className="mw-screen pb-32">{children}</main>
           <Footer />
         </div>
       </>
