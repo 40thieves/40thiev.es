@@ -3,13 +3,13 @@
  * Normalize.css and some additional base styles.
  *
  * You can see the styles here:
- * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/base.css
  *
  * If using `postcss-import`, use this import instead:
  *
- * @import "tailwindcss/preflight";
+ * @import "tailwindcss/base";
  */
-@import "tailwindcss/preflight";
+@tailwind base;
 
 /**
  * This injects any component classes registered by plugins.
@@ -18,7 +18,7 @@
  *
  * @import "tailwindcss/components";
  */
-@import "tailwindcss/components";
+@tailwind components;
 
 /**
  * Here you would add any of your custom component classes; stuff that you'd
@@ -44,7 +44,7 @@
  *
  * @import "tailwindcss/utilities";
  */
-@import "tailwindcss/utilities";
+@tailwind utilities;
 
 /**
  * Here you would add any custom utilities you need that don't come out of the
@@ -61,6 +61,7 @@
  * @import "utilities/skew-transforms";
  */
 
+ /* Default to sans font */
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }

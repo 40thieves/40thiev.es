@@ -43,16 +43,7 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: 'gatsby-plugin-postcss',
-      options: {
-        postCssPlugins: [
-          require('postcss-import')(),
-          require('tailwindcss')('./tailwind.config.js'),
-          require(`postcss-preset-env`)(),
-        ],
-      },
-    },
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
