@@ -5,7 +5,7 @@ const Header = () => (
     <ColorBar />
 
     <div className="mx-6 sm:mx-16">
-      <h1 className="mt-12 mb-5 text-4xl">
+      <h1 className="mt-12 mb-2 text-4xl inline-block">
         <a
           href="/"
           className="
