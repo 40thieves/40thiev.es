@@ -24,7 +24,7 @@ const Post = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <article className="max-w-md mx-auto mt-16">
+      <article className="max-w-3xl mx-8 sm:mx-auto mt-16">
         <PostHeader
           slug={post.fields.slug}
           title={post.frontmatter.title}
@@ -32,7 +32,7 @@ const Post = ({ data }) => {
           readTime={post.timeToRead}
         />
         <section
-          className="ml-24 sm:ml-0 text-lg leading-tight post-content"
+          className="ml-0 sm:ml-24 text-lg leading-tight post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </article>

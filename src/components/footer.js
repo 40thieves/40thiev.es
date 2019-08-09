@@ -3,15 +3,15 @@ import React from 'react'
 const Footer = () => (
   <footer
     className="
-      absolute pin-b w-full px-16 py-8
-      bg-grey-lightest border-t border-grey-light
-      text-xs text-grey-dark
+      w-full px-16 py-8
+      bg-gray-100 border-t border-gray-300
+      text-xs text-gray-700
     "
   >
     <section>
       All content released under a{' '}
       <a
-        className="text-grey-dark hover:text-grey-darker no-underline"
+        className="text-gray-700 hover:text-gray-900 no-underline"
         href="http://creativecommons.org/licenses/by/3.0/deed.en_US"
       >
         Creative Commons Attribution License
@@ -20,7 +20,7 @@ const Footer = () => (
     <section className="mt-1">
       Built with{' '}
       <a
-        className="mt-1 text-grey-dark hover:text-grey-darker no-underline"
+        className="mt-1 text-gray-700 hover:text-gray-900 no-underline"
         href="https://www.gatsbyjs.org"
       >
         Gatsby

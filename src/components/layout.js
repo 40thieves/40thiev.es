@@ -26,11 +26,9 @@ const Layout = ({ children }) => (
         <Helmet title={data.site.siteMetadata.title}>
           <html lang="en" />
         </Helmet>
-        <div className="relative min-h-screen">
-          <Header title={data.site.siteMetadata.title} />
-          <main className="mw-screen pb-32">{children}</main>
-          <Footer />
-        </div>
+        <Header title={data.site.siteMetadata.title} />
+        <main className="mb-20">{children}</main>
+        <Footer />
       </>
     )}
   />

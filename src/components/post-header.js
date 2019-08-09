@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 const PostHeader = ({ slug, title, date, readTime }) => (
   <header className="flex flex-col-reverse sm:flex-row">
     <h1 className="font-serif text-4xl leading-none" style={{ order: 1 }}>
-      <Link to={slug} className="text-blue no-underline font-medium">
+      <Link to={slug} className="text-blue-500 no-underline font-medium">
         {title}
       </Link>
     </h1>
@@ -13,8 +13,8 @@ const PostHeader = ({ slug, title, date, readTime }) => (
         flex sm:flex-col
         sm:w-16 sm:mx-4 sm:h-0
         pt-2
-        border-t border-teal-dark
-        text-grey-dark text-xs text-center leading-tight
+        border-t border-teal-500
+        text-gray-600 text-xs text-center leading-tight
       "
     >
       <time dateTime={date} className="mx-1 sm:ml-0">

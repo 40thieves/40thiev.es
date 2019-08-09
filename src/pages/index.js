@@ -32,7 +32,7 @@ const IndexPage = () => (
       render={data => (
         <>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <article key={node.id} className="max-w-md mx-8 sm:mx-auto mt-16">
+            <article key={node.id} className="max-w-3xl mx-8 sm:mx-auto mt-16">
               <PostHeader
                 slug={node.fields.slug}
                 title={node.frontmatter.title}
