@@ -6,6 +6,14 @@ module.exports = {
     lang: 'en',
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`,
+      },
+    },
+    'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
@@ -21,15 +29,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-postcss',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'src',
-        path: `${__dirname}/src/`,
-      },
-    },
-    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-feed',
       options: {
@@ -86,6 +85,13 @@ module.exports = {
             title: '40thiev.es Posts',
           },
         ],
+      },
+    },
+    'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        tailwind: true,
       },
     },
   ],
