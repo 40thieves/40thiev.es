@@ -5,13 +5,15 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: "Ali's Waste of Bandwidth",
+        short_name: '40thiev.es',
+        description: "Ali Smith's blog",
+        icon: 'src/images/icon.png',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#ffffff',
+        theme_color: '#38B2AC',
         display: 'minimal-ui',
       },
     },
