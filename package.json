@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Alasdair Smith <ali@alasdairsmith.co.uk>",
   "dependencies": {
+    "autoprefixer": "^9.6.1",
     "gatsby": "^2.13.57",
     "gatsby-plugin-feed": "^2.3.6",
     "gatsby-plugin-manifest": "^2.2.5",
