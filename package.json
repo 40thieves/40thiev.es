@@ -9,7 +9,7 @@
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-postcss": "2.0.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-source-filesystem": "^2.0.6",
+    "gatsby-source-filesystem": "^2.1.9",
     "gatsby-transformer-remark": "^2.1.11",
     "postcss-import": "12.0.1",
     "postcss-preset-env": "6.1.2",
