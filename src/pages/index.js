@@ -6,7 +6,10 @@ import PostHeader from '../components/post-header'
 
 const query = graphql`
   query IndexPageQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      filter: { frontmatter: { date: { ne: null } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           id
