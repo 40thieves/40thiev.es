@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Ali's Waste of Bandwidth",
+    siteUrl: 'https://40thiev.es',
+    lang: 'en',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

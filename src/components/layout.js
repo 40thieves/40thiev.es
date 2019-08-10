@@ -13,6 +13,7 @@ const query = graphql`
     site {
       siteMetadata {
         title
+        lang
       }
     }
   }
@@ -24,9 +25,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet title={data.site.siteMetadata.title}>
-          <html lang="en" />
+          <html lang={data.site.siteMetadata.lang} />
         </Helmet>
-        <Header title={data.site.siteMetadata.title} />
+        <Header />
         <main className="mb-20">{children}</main>
         <Footer />
       </>
