@@ -37,7 +37,7 @@ const IndexPage = () => (
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <article key={node.id} className="max-w-3xl mx-8 sm:mx-auto mt-16">
               <PostHeader
-                slug={node.fields.slug}
+                slug={`/${node.fields.slug}`}
                 title={node.frontmatter.title}
                 date={node.frontmatter.date}
                 readTime={node.timeToRead}

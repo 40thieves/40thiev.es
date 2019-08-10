@@ -26,7 +26,7 @@ const Post = ({ data }) => {
     <Layout>
       <article className="max-w-3xl mx-8 sm:mx-auto mt-16">
         <PostHeader
-          slug={post.fields.slug}
+          slug={`/${post.fields.slug}`}
           title={post.frontmatter.title}
           date={post.frontmatter.date}
           readTime={post.timeToRead}
