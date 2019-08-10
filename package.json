@@ -5,6 +5,7 @@
   "author": "Alasdair Smith <ali@alasdairsmith.co.uk>",
   "dependencies": {
     "gatsby": "^2.13.57",
+    "gatsby-plugin-feed": "^2.3.6",
     "gatsby-plugin-manifest": "^2.2.5",
     "gatsby-plugin-offline": "^2.2.5",
     "gatsby-plugin-postcss": "^2.1.2",
