@@ -4,7 +4,7 @@
 
  /* Default to sans font */
 body {
-  @apply font-sans;
+  @apply font-sans text-gray-900;
 }
 
 .post-content h1,

@@ -9,7 +9,7 @@ const Header = () => (
         <a
           href="/"
           className="
-            flex text-gray-700 hover:text-black no-underline leading-tight
+            flex text-gray-700 hover:text-gray-900 no-underline leading-tight
           "
         >
           <Logo />
