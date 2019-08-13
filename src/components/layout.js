@@ -1,9 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import 'typeface-roboto'
-import 'typeface-merriweather'
-
 import '../css/index.css'
 
 import Header from './header'
