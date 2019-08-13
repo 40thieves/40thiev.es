@@ -7,6 +7,10 @@ body {
   @apply font-sans text-gray-900;
 }
 
+.post-content > * {
+  @apply mb-4 leading-normal;
+}
+
 .post-content h1,
 .post-content h2,
 .post-content h3,
@@ -40,16 +44,20 @@ body {
   @apply text-lg;
 }
 
-.post-content p {
-  @apply pt-4 px-0 pb-2 leading-normal;
-}
-
 .post-content a {
   @apply text-blue-500 no-underline;
 }
 
+.post-content ul, .post-content ol {
+  @apply pl-6;
+}
+
+.post-content ul {
+  @apply list-disc;
+}
+
 .post-content ol {
-  @apply list-decimal list-inside;
+  @apply list-decimal;
 }
 
 /*
@@ -57,7 +65,7 @@ body {
  */
 
 .gatsby-highlight {
-  @apply bg-gray-800 text-sm rounded overflow-auto my-2 mx-0 p-3;
+  @apply bg-gray-800 text-sm rounded overflow-auto mt-2 mx-0 p-3;
 }
 
 .gatsby-highlight pre[class*="language-"] {
@@ -65,6 +73,7 @@ body {
 }
 
 :not(pre) > code[class*="language-"] {
-  @apply text-base text-gray-900 bg-gray-200;
+  @apply text-gray-900 bg-gray-200;
+  font-size: 85%;
   padding: 0.1em 0.25em;
 }
