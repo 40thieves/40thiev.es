@@ -8,7 +8,7 @@ body {
 }
 
 .post-content > * {
-  @apply mb-4 leading-normal;
+  @apply mb-4;
 }
 
 .post-content h1,
