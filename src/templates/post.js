@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 import PostHeader from '../components/post-header'
 
 export const query = graphql`
@@ -24,6 +25,7 @@ const Post = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
+      <Head title={post.frontmatter.title} />
       <article className="max-w-3xl mx-8 sm:mx-auto mt-16">
         <PostHeader
           slug={post.fields.slug}

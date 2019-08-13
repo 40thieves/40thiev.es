@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "Ali's Waste of Bandwidth",
-    description: '40thiev.es Posts',
+    description:
+      "40thiev.es is Ali Smith's blog where I write about nonsense. And very code occasionally",
+    twitter: '@40_thieves',
     siteUrl: 'https://40thiev.es',
     lang: 'en',
   },

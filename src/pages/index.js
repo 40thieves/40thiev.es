@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 import PostHeader from '../components/post-header'
 
 const query = graphql`
@@ -30,6 +31,7 @@ const query = graphql`
 
 const IndexPage = () => (
   <Layout>
+    <Head />
     <StaticQuery
       query={query}
       render={data => (
