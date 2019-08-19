@@ -7,7 +7,7 @@ date: "2011-06-02"
 
 I'm super excited to say that in just under a week, I'll be back at [KISC](http://www.kisc.ch) :)
 
-I'm gonna be working as a Snow & Ice (SNICE) Guide, which means that I'll be taking groups up onto a couple of glaciers to get geared up with crampons, ice axes and ropes. We'll be teaching some basic glacier techniques - jumping over crevasses, [ice axe self-arrest](http://www.youtube.com/watch?v=YyRF6AjAI94), crevasse rescue - some ice climbing and trekking. I [tried it out last summer](http://kandersteg.posterous.com/frunden-glacier-expedition) and I've picked a few of the best photos:
+I'm gonna be working as a Snow & Ice (SNICE) Guide, which means that I'll be taking groups up onto a couple of glaciers to get geared up with crampons, ice axes and ropes. We'll be teaching some basic glacier techniques - jumping over crevasses, [ice axe self-arrest](https://www.youtube.com/watch?v=YyRF6AjAI94), crevasse rescue - some ice climbing and trekking. I [tried it out last summer](http://kandersteg.posterous.com/frunden-glacier-expedition) and I've picked a few of the best photos:
 
 ![](./27149862-IMG_0627.jpg)
 

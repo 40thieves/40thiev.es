@@ -11,7 +11,7 @@ If you've visited my nameplate ([alasdairsmith.org.uk](http://alasdairsmith.org.
 
 I'm going to mainly be working on [InventoryBase](http://inventorybase.com), a brand new web app that is designed to help landlords keep track of their inventories. We just released a promo video, with an insanely catchy tune that's been playing all week in the office:
 
-<iframe src="http://www.youtube.com/embed/g2hpyVfo394?wmode=transparent" allowfullscreen frameborder="0" height="417" width="750"></iframe>
+<iframe src="https://www.youtube.com/embed/g2hpyVfo394?wmode=transparent" allowfullscreen frameborder="0" height="417" width="750"></iframe>
 
 InventoryBase is built on BackboneJS, with a backend built from FuelPHP. This is a pretty big step up in level of coding complexity for me, and I'm really excited to dive in some more. At the moment it looks like I'll be full time on this project at least until September, to help bring it fully up to it's potential.
 
