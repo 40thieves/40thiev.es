@@ -108,7 +108,6 @@ module.exports = {
       options: {
         tailwind: true,
         ignore: ['prismjs/themes/prism-tomorrow.css'], // Allow PrismJS theme
-        printRejected: true,
       },
     },
   ],
