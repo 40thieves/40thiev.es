@@ -39,7 +39,7 @@ module.exports = {
         icon: 'src/images/icon.png',
         start_url: '/',
         background_color: '#ffffff',
-        theme_color: '#38B2AC',
+        theme_color: '#ffffff',
         display: 'minimal-ui',
       },
     },
