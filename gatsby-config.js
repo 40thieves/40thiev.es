@@ -15,6 +15,7 @@ module.exports = {
         path: `${__dirname}/content/`,
       },
     },
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -63,9 +64,7 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
-                const url = `${site.siteMetadata.siteUrl}/${
-                  edge.node.fields.slug
-                }`
+                const url = `${site.siteMetadata.siteUrl}/${edge.node.fields.slug}`
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   url,
