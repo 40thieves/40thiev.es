@@ -7,11 +7,11 @@ import Header from './header'
 import Footer from './footer'
 
 const Layout = ({ children }) => (
-  <>
+  <div className="h-screen grid grid-rows-layout">
     <Header />
     <main className="mb-20">{children}</main>
     <Footer />
-  </>
+  </div>
 )
 
 Layout.propTypes = {
