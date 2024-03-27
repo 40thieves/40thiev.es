@@ -41,5 +41,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "volta": {
+    "node": "16.20.2"
   }
 }
